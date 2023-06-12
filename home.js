@@ -1,5 +1,8 @@
 const container = document.querySelector('.container')
 
+const squaresButton = document.querySelector('.squaresButton')
+
+
 
 const createDiv = () => {
 
@@ -7,13 +10,13 @@ const createDiv = () => {
     const row = document.createElement('div')
     row.classList.add('row')
     container.appendChild(row)
-    row.textContent = 'X'
+    row.textContent = ''
 
     for (j =0; j<16; j++){
       const col = document.createElement('div');
       col.className = 'col';
       row.appendChild(col)
-      col.textContent = 'O'
+      col.textContent = ''
       col.addEventListener('mouseover', e => {e.target.classList.add('my-color-class')})
     }
   }
