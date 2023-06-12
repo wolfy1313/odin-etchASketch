@@ -14,10 +14,12 @@ const createDiv = () => {
       col.className = 'col';
       row.appendChild(col)
       col.textContent = 'O'
+      col.addEventListener('mouseover', e => {e.target.classList.add('my-color-class')})
     }
   }
   
 }
 
 createDiv()
+
 
