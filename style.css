@@ -1,23 +1,20 @@
 .container {
+  position: relative;
+  height: 480px;
+  width: 480px;
+  border: 1px solid black;
+  box-sizing: border-box;
   display: flex;
-  flex-grow: 0;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.col {
+  flex: 0 0 calc(100% / var(--num-columns));
+  height: calc(100% / var(--num-rows));
   padding: 0;
   margin: 0;
-  /* flex-basis: content; */
-  /* flex-wrap: wrap; */
-  height: 960px;
-  width: 960px;
-}
-.row{
-  flex-basis: content;
-}
-.col{
-  flex-basis: content;
-  border: 1% solid black;
-  padding: 1rem;
-  margin: 0;
-  background-color: aqua;
-  /* display: flex; */
+  box-sizing: border-box;
 }
 
 .my-color-class {
