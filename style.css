@@ -9,7 +9,7 @@
   align-content: flex-start;
 }
 
-.col {
+.cell {
   flex: 0 0 calc(100% / var(--num-columns));
   height: calc(100% / var(--num-rows));
   padding: 0;
@@ -17,6 +17,7 @@
   box-sizing: border-box;
 }
 
-.my-color-class {
+/* first implementation of color change below */
+/* .my-color-class {
   background-color: red;
-}
+} */
