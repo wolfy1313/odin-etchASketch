@@ -4,7 +4,7 @@ let cells = []
 
 function numberPopup() {
   let num = prompt('How many squares?', "1")
-  if (num > 100 || num < 1) {
+  while (num > 100 || num < 1) {
     num = prompt("Enter a valid number between 1-100, please", "1")
   }
   removeDiv()
